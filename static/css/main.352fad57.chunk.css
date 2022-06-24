@@ -6415,7 +6415,7 @@ canvas {
   width: auto;
 }
 @font-face {
-  font-family: Font awesome\5 Brands;
+  font-family: Font Awesome\5 Brands;
   font-style: normal;
   font-weight: 400;
   font-display: auto;
@@ -6428,10 +6428,10 @@ canvas {
     url(../../static/media/fa-brands-400.0017cc6d.svg#fontawesome) format("svg");
 }
 .fab {
-  font-family: Font awesome\5 Brands;
+  font-family: Font Awesome\5 Brands;
 }
 @font-face {
-  font-family: Font awesome\5 Free;
+  font-family: Font Awesome\5 Free;
   font-style: normal;
   font-weight: 400;
   font-display: auto;
@@ -6448,7 +6448,7 @@ canvas {
   font-weight: 400;
 }
 @font-face {
-  font-family: Font awesome\5 Free;
+  font-family: Font Awesome\5 Free;
   font-style: normal;
   font-weight: 900;
   font-display: auto;
@@ -6463,7 +6463,7 @@ canvas {
 .fa,
 .far,
 .fas {
-  font-family: Font awesome\5 Free;
+  font-family: Font Awesome\5 Free;
 }
 .fa,
 .fas {
