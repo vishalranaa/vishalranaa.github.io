@@ -33,8 +33,12 @@
 }
 
 .contact-heading-img-div {
-  align-items: center;
+  display: flex;
   justify-content: center;
+}
+.contact-heading-img-div img {
+  height: 320px;
+    border-radius: 160px;
 }
 
 .blog-heading-img-div {

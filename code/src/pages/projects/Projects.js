@@ -64,7 +64,7 @@ class Projects extends Component {
 
         {/* Publications  */}
 
-        <div className="basic-projects">
+        {/* <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="publications-heading-div">
               <div className="publications-heading-text-div">
@@ -83,12 +83,12 @@ class Projects extends Component {
               </div>
             </div>
           </Fade>
-        </div>
+        </div> */}
 
         <div className="repo-cards-div-main">
-          {PublicationData.data.map((repo) => {
+          {/* {PublicationData.data.map((repo) => {
             return <PublicationCard repo={repo} theme={theme} />;
-          })}
+          })} */}
         </div>
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />

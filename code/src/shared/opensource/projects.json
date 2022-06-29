@@ -2,59 +2,63 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
+      "name": "Steuern",
       "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "The complete portfolio website hosted using github pages (gh-pages). Visit the website here : ",
+      "url": "https://steuern59.ch/",
+      "description": "The mobile application for filling Income Tax return",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "Angular",
+          "iconifyClass": "logos-angular"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Node",
+          "iconifyClass": "logos-node"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "MongoDB",
+          "iconifyClass": "logos-mongodb"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
-      "name": "truvisory",
+      "name": "Hello Patients",
       "createdAt": "2020-06-03T11:53:55Z",
-      "url": "https://github.com/ashutosh1919/truvisory",
-      "description": "This project is meant to provide resources to users who want to access good LinkedIn posts which contains resources to learn any Technology, Design, Self-Branding, Motivation etc. You can visit project by:",
+      "url": "https://www.hellopatients.com/",
+      "description": "HelloPatients is a modern, enhanced practice management platform focused on successful patient engagement and on delivering improved financial results",
       "isFork": false,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
+          "name": "React",
+          "iconifyClass": "logos-react"
         },
         {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Node",
+          "iconifyClass": "logos-node"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "name": "MySql",
+          "iconifyClass": "logos-mysql"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
-      "name": "ml-data-bot",
+      "name": "Operr Work",
       "createdAt": "2020-06-19T14:24:55Z",
-      "url": "https://github.com/ashutosh1919/ml-data-bot",
+      "url": "https://operrwork.com/",
       "description": "Chatbot which helps you to get important statistics from the data to get insights to build Machine learning, Deep learning and Statistical models",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "Angular",
+          "iconifyClass": "logos-angular"
+        },
+        {
+          "name": "Node",
+          "iconifyClass": "logos-node"
         }
       ]
     },
