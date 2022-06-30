@@ -4,6 +4,9 @@
   font-family: "Google Sans Regular";
   text-align: center;
 }
+.main {
+  margin-bottom: 6rem;
+}
 
 @media (max-width: 1380px) {
   .educations-header {

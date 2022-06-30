@@ -14,7 +14,7 @@
         },
         {
           "name": "Node",
-          "iconifyClass": "logos-node"
+          "iconifyClass": "logos-nodejs"
         },
         {
           "name": "MongoDB",
@@ -36,7 +36,7 @@
         },
         {
           "name": "Node",
-          "iconifyClass": "logos-node"
+          "iconifyClass": "logos-nodejs"
         },
         {
           "name": "MySql",
@@ -58,53 +58,69 @@
         },
         {
           "name": "Node",
-          "iconifyClass": "logos-node"
+          "iconifyClass": "logos-nodejs"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxNTU5NTE3NTk=",
-      "name": "Stock-Prediction-using-LSTM",
+      "name": "Operr HomeCare",
       "createdAt": "2018-11-03T05:00:56Z",
-      "url": "https://github.com/ashutosh1919/Stock-Prediction-using-LSTM",
-      "description": "This Project is predicting stocks for 32 companies with error less than 1% using LSTM Networks.",
+      "url": "https://operrhomecare.com/",
+      "description": "Caregiver and patient management system",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "Angular",
+          "iconifyClass": "logos-angular"
         },
         {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
+          "name": "NodeJS",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "MySql",
+          "iconifyClass": "logos-mysql"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
-      "name": "Pick-Parser",
+      "name": "CLE Marketplace",
       "createdAt": "2019-08-13T13:13:00Z",
-      "url": "https://github.com/dsc-iiitdmk/Pick-Parser",
-      "description": "This Project is to create a tool which can parse the Resumes and transform them into our own templates",
+      "url": "https://werecle.com/",
+      "description": "CLÉ is a luxury marketplace, connecting discerning buyers, collectors, and connoisseurs with sellers the world over on an end-to-end and secure platform",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "Magento",
+          "iconifyClass": "logos-magento"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
-      "name": "Survival_3D_Game",
+      "name": "Orah Care",
       "createdAt": "2019-04-18T17:25:51Z",
-      "url": "https://github.com/ashutosh1919/Survival_3D_Game",
-      "description": "Survival Game using Unity3D",
+      "url": "https://orah.care/",
+      "description": "Orah combines caregiver-generated patient data + human clinical teams to help agencies’ care teams bring their quality care to new heights.",
       "isFork": false,
       "languages": [
         {
-          "name": "C#",
-          "iconifyClass": "logos-c-sharp"
+          "name": "Angular",
+          "iconifyClass": "logos-angular"
+        },
+        {
+          "name": "NodeJS",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "MySql",
+          "iconifyClass": "logos-mysql"
         }
       ]
     }

@@ -21,7 +21,7 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        {/* <Header theme={theme} /> */}
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
@@ -91,8 +91,8 @@ class Projects extends Component {
           })} */}
         </div>
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        {/* <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        <TopButton theme={this.props.theme} /> */}
       </div>
     );
   }

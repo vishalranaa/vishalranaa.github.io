@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "677966eee4d28ef1023bffb66c0383ab",
+    "revision": "9a6fe7bab916c247ba0e27cfdf8100f8",
     "url": "./index.html"
   },
   {
-    "revision": "6aa4d38891176d03f39c",
-    "url": "./static/css/main.2965a93d.chunk.css"
+    "revision": "b48efecb20b70e716dd1",
+    "url": "./static/css/main.4eab1a60.chunk.css"
   },
   {
-    "revision": "2cbe66d983bbca43204b",
-    "url": "./static/js/2.efca29d3.chunk.js"
+    "revision": "2eceb06be57e2e83d14a",
+    "url": "./static/js/2.ce8ad27e.chunk.js"
   },
   {
-    "revision": "6aa4d38891176d03f39c",
-    "url": "./static/js/main.694249f4.chunk.js"
+    "revision": "b48efecb20b70e716dd1",
+    "url": "./static/js/main.ee85bb48.chunk.js"
   },
   {
     "revision": "1a27038c5115d044f6f9",
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/address_image.16559172.svg"
   },
   {
-    "revision": "dcd6dee2bd7458a4a576dc131506fd83",
-    "url": "./static/media/animated_logo.dcd6dee2.svg"
-  },
-  {
     "revision": "058eca4cbdc03a1dad9a6bb943ac7831",
     "url": "./static/media/blogs_image.058eca4c.svg"
   },
@@ -86,10 +82,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3e23ca14e7a7c8a7b63d255466749000",
     "url": "./static/media/developerActivity.3e23ca14.svg"
-  },
-  {
-    "revision": "63f707f224c8a842ac928c36e3be879a",
-    "url": "./static/media/dsc_logo.63f707f2.png"
   },
   {
     "revision": "3bab7a9dc4324f1b2364d25a47fcfcf0",
@@ -188,10 +180,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/ibm_logo.d3fccbe1.png"
   },
   {
-    "revision": "571a8584e69ecfbe326c8b8385fbbf54",
-    "url": "./static/media/iiitk_logo.571a8584.png"
-  },
-  {
     "revision": "db461b41df9c41d523c47aeac4310ae4",
     "url": "./static/media/infowiz.db461b41.png"
   },
@@ -204,20 +192,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/jsFramework.5b4a6449.svg"
   },
   {
-    "revision": "c597fbded5de799dfb9abc3fc4f1c26f",
-    "url": "./static/media/legato_logo.c597fbde.png"
-  },
-  {
     "revision": "83ac24fb968a474c6a63f7a4e9a8f62c",
     "url": "./static/media/manOnTable.83ac24fb.svg"
   },
   {
     "revision": "069938a84edd6ebf383c318e9feb5d4c",
     "url": "./static/media/muffito_logo.069938a8.png"
-  },
-  {
-    "revision": "8eda0093c099f64f581303cc75b88143",
-    "url": "./static/media/netsmartz.8eda0093.webp"
   },
   {
     "revision": "95a12a2b8c3149cce2175679755c4b4d",
@@ -238,10 +218,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "71408db71465afd742233e4a96f06526",
     "url": "./static/media/pwa.71408db7.png"
-  },
-  {
-    "revision": "2c497738be3831492aeb6bdc43f19154",
-    "url": "./static/media/stanford_logo.2c497738.png"
   },
   {
     "revision": "6ac91b161c2c9934a44f72d75d18142d",
