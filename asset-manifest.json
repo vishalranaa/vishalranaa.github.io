@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.4eab1a60.chunk.css",
-    "main.js": "./static/js/main.ee85bb48.chunk.js",
-    "main.js.map": "./static/js/main.ee85bb48.chunk.js.map",
+    "main.css": "./static/css/main.36c4c241.chunk.css",
+    "main.js": "./static/js/main.5092176a.chunk.js",
+    "main.js.map": "./static/js/main.5092176a.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fff6ee50.js",
     "runtime-main.js.map": "./static/js/runtime-main.fff6ee50.js.map",
-    "static/js/2.ce8ad27e.chunk.js": "./static/js/2.ce8ad27e.chunk.js",
-    "static/js/2.ce8ad27e.chunk.js.map": "./static/js/2.ce8ad27e.chunk.js.map",
+    "static/js/2.20b4d34b.chunk.js": "./static/js/2.20b4d34b.chunk.js",
+    "static/js/2.20b4d34b.chunk.js.map": "./static/js/2.20b4d34b.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.c7a08e5c3d20eb9bc77c31f4bbcf61fb.js": "./precache-manifest.c7a08e5c3d20eb9bc77c31f4bbcf61fb.js",
+    "precache-manifest.a16a3c69fa4f63a545b39f7d0d339b3a.js": "./precache-manifest.a16a3c69fa4f63a545b39f7d0d339b3a.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.4eab1a60.chunk.css.map": "./static/css/main.4eab1a60.chunk.css.map",
+    "static/css/main.36c4c241.chunk.css.map": "./static/css/main.36c4c241.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "./static/media/address_image.16559172.svg",
     "static/media/blogs_image.svg": "./static/media/blogs_image.058eca4c.svg",
@@ -35,7 +35,9 @@
     "static/media/jsFramework.svg": "./static/media/jsFramework.5b4a6449.svg",
     "static/media/manOnTable.svg": "./static/media/manOnTable.83ac24fb.svg",
     "static/media/muffito_logo.png": "./static/media/muffito_logo.069938a8.png",
+    "static/media/netmax_logo.png": "./static/media/netmax_logo.32e44b35.png",
     "static/media/nptel_logo.png": "./static/media/nptel_logo.95a12a2b.png",
+    "static/media/pk-ware.png": "./static/media/pk-ware.7240d673.png",
     "static/media/programmer.svg": "./static/media/programmer.5faf790b.svg",
     "static/media/projects_image.svg": "./static/media/projects_image.b8ba9487.svg",
     "static/media/ptu.png": "./static/media/ptu.045ee945.png",
@@ -47,8 +49,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fff6ee50.js",
-    "static/js/2.ce8ad27e.chunk.js",
-    "static/css/main.4eab1a60.chunk.css",
-    "static/js/main.ee85bb48.chunk.js"
+    "static/js/2.20b4d34b.chunk.js",
+    "static/css/main.36c4c241.chunk.css",
+    "static/js/main.5092176a.chunk.js"
   ]
 }

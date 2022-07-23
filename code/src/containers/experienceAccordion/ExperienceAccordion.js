@@ -8,40 +8,51 @@ class ExperienceAccordion extends Component {
     const theme = this.props.theme;
     return (
       <div className="experience-accord">
-        <Accordion>
+        {/* <Accordion> */}
           {this.props.sections.map((section) => {
             return (
-              <Panel
-                className="accord-panel"
-                title={section["title"]}
-                key={section["title"]}
-                overrides={{
-                  Header: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                      border: `1px solid`,
-                      borderRadius: `5px`,
-                      borderColor: `${theme.headerColor}`,
-                      marginBottom: `3px`,
-                      fontFamily: "Google Sans Regular",
-                    }),
-                  },
-                  Content: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                    }),
-                  },
-                }}
-              >
+              // <Panel
+              //   className="accord-panel"
+              //   title={section["title"]}
+              //   key={section["title"]}
+              //   overrides={{
+              //     Header: {
+              //       style: () => ({
+              //         backgroundColor: `${theme.body}`,
+              //         border: `1px solid`,
+              //         borderRadius: `5px`,
+              //         borderColor: `${theme.headerColor}`,
+              //         marginBottom: `3px`,
+              //         fontFamily: "Google Sans Regular",
+              //       }),
+              //     },
+              //     Content: {
+              //       style: () => ({
+              //         backgroundColor: `${theme.body}`,
+              //       }),
+              //     },
+              //   }}
+              // >
+              
+              < div className="accord-panel"
+              title={section["title"]}
+              key={section["title"]}
+              style={{
+                backgroundColor: `${theme.body}`,
+                marginBottom: `3px`,
+                fontFamily: "Google Sans Regular",
+              }}>
+                <h3>{section["title"]}</h3>
                 {section["experiences"].map((experience) => {
                   return (
                     <ExperienceCard experience={experience} theme={theme} />
                   );
                 })}
-              </Panel>
+                </div>
+              
             );
           })}
-        </Accordion>
+        {/* </Accordion> */}
       </div>
     );
   }

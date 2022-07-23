@@ -508,11 +508,22 @@ const experience = {
       title: "Work",
       experiences: [
         {
+          title: "Software Engineer",
+          company: "PK Ware",
+          company_url: "https://www.pkware.com/",
+          logo_path: "pk-ware.png",
+          duration: "Jul 2022 - PRESENT",
+          location: "Mohali, India",
+          description:
+            "PKWARE offers the only data discovery and protection solution that locates and secures sensitive data to minimize organizational risks and costs, regardless of device or environment. Our software enables visibility and control of personal data, even in complex environments, making PKWARE a global leader in data discovery, security, and compliance.",
+          color: "#0879bf",
+        },
+        {
           title: "MEAN/MEARN Stack Developer",
           company: "Netsmartz Infotech",
           company_url: "https://netsmartz.com/",
           logo_path: "netsmartz.png",
-          duration: "Jan 2021 - PRESENT",
+          duration: "Jan 2021 - Jul-2022",
           location: "Chandigarh, India",
           description:
             "I am working on automating healthcare products, E-commerce applications, and API Testing Tools as a MEAN/MERN Stack developer",
@@ -542,14 +553,14 @@ const experience = {
           duration: "May 2016 - Sept 2017",
           location: "Chandigarh, India",
           description: "I have learned JavaScript and Web Development.",
-          color: "#ee3c26",
+          color: "#0071C5",
         },
         {
           title: "Java & Android",
           company: "Infowiz Software Solution",
           company_url:
             "https://www.infowiz.co.in/",
-          logo_path: "infowiz.jpg",
+          logo_path: "infowiz.png",
           duration: "Nov 2015 - Dec 2016",
           location: "Chandigarh, India",
           description: "Learned Java and Android Application development",

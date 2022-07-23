@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a6fe7bab916c247ba0e27cfdf8100f8",
+    "revision": "d0de0208a03f4e7cb766abd7fbe6d7ff",
     "url": "./index.html"
   },
   {
-    "revision": "b48efecb20b70e716dd1",
-    "url": "./static/css/main.4eab1a60.chunk.css"
+    "revision": "a9b0a4df9bf26b820658",
+    "url": "./static/css/main.36c4c241.chunk.css"
   },
   {
-    "revision": "2eceb06be57e2e83d14a",
-    "url": "./static/js/2.ce8ad27e.chunk.js"
+    "revision": "aaf0ec1d97644b004360",
+    "url": "./static/js/2.20b4d34b.chunk.js"
   },
   {
-    "revision": "b48efecb20b70e716dd1",
-    "url": "./static/js/main.ee85bb48.chunk.js"
+    "revision": "a9b0a4df9bf26b820658",
+    "url": "./static/js/main.5092176a.chunk.js"
   },
   {
     "revision": "1a27038c5115d044f6f9",
@@ -200,8 +200,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/muffito_logo.069938a8.png"
   },
   {
+    "revision": "32e44b352a9119a80601604ba2dac3a6",
+    "url": "./static/media/netmax_logo.32e44b35.png"
+  },
+  {
     "revision": "95a12a2b8c3149cce2175679755c4b4d",
     "url": "./static/media/nptel_logo.95a12a2b.png"
+  },
+  {
+    "revision": "7240d6734306185bb8053d50e2ca08d2",
+    "url": "./static/media/pk-ware.7240d673.png"
   },
   {
     "revision": "5faf790badc18fa9030f94836ece1df1",
