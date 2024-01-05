@@ -36,9 +36,9 @@ const socialMediaLinks = [
   // linkedin: "https://www.linkedin.com/in/vishal-rana-a40149139/",
   // gmail: "vishalrajput9595@gmail.com",
   // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/vishalrajput95/",
+  // facebook: "https://www.facebook.com/vishalrajput-01/",
   // twitter: "https://twitter.com/vishalranaa",
-  // instagram: "https://www.instagram.com/vishal.ranaaaaa"
+  // instagram: "https://www.instagram.com/thevish____"
 
   {
     name: "Github",
@@ -54,7 +54,7 @@ const socialMediaLinks = [
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/channel/UCWGkZhrhsbZgZ85ONJZuHNg",
+    link: "https://www.youtube.com/channel/UCWGkZhrhsbZgZ85ONJZuHNgrr",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
@@ -72,13 +72,13 @@ const socialMediaLinks = [
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/vishalrajput95/",
+    link: "https://www.facebook.com/vishalrajput-01/",
     fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
     backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/vishal.ranaaaaa",
+    link: "https://www.instagram.com/thevish____",
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
