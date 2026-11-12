@@ -1,0 +1,11 @@
+---
+// Splits text into masked words for reveal animations. Wrap words in *asterisks* for gold italics.
+interface Props { text: string; tag?: string; class?: string; id?: string }
+const { text, tag: Tag = "span", class: cls = "", id } = Astro.props;
+const words = text.split(" ").map((w) => ({ em: /^\*.*\*[.,!?]?$/.test(w), t: w.replace(/\*/g, "") }));
+---
+<Tag class:list={["split", cls]} id={id} aria-label={text.replace(/\*/g, "")}>
+  {words.map((w) => (
+    <><span class="split__m" aria-hidden="true"><span class:list={["split__w", { "em gold": w.em }]}>{w.t}</span></span>{" "}</>
+  ))}
+</Tag>

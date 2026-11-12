@@ -1,0 +1,50 @@
+---
+import { nav, site } from "../data/profile";
+---
+<!-- Preloader -->
+<div class="loader" aria-hidden="true">
+  <svg class="loader__mark" viewBox="0 0 64 64" fill="none">
+    <defs>
+      <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dfb2" /><stop offset="1" stop-color="#a7834a" /></linearGradient>
+    </defs>
+    <path pathLength="1" d="M15 18l11 28 11-28" stroke="url(#lg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+    <path pathLength="1" d="M36 46V18h7a7 7 0 010 14h-7m7 0l6 14" stroke="url(#lg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+  <div class="loader__foot">
+    <span>Vishal Rana — Portfolio</span>
+    <span class="loader__count"><b data-count>000</b></span>
+  </div>
+  <div class="loader__bar"><i></i></div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+<!-- Navigation -->
+<header class="nav" data-nav>
+  <div class="nav__pill">
+    <a href="#top" class="nav__brand" aria-label="Vishal Rana — back to top">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M15 18l11 28 11-28M36 46V18h7a7 7 0 010 14h-7m7 0l6 14" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      <span>Vishal Rana</span>
+    </a>
+    <nav aria-label="Primary" class="nav__links">
+      {nav.map((n) => <a href={n.href} data-link>{n.label}</a>)}
+      <span class="nav__indicator" aria-hidden="true"></span>
+    </nav>
+    <a class="nav__cta" href={`mailto:${site.email}`} data-magnetic>
+      <span class="nav__dot" aria-hidden="true"></span>Let's talk
+    </a>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i></i></div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <ol>{nav.map((n, i) => <li><a href={n.href}><small>0{i + 1}</small>{n.label}</a></li>)}</ol>
+  </nav>
+  <div class="menu__foot">
+    <a href={`mailto:${site.email}`}>Send me an email →</a>
+    <span>{site.location}</span>
+  </div>
+</div>

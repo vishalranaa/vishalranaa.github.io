@@ -1,0 +1,58 @@
+---
+import { site } from "../data/profile";
+---
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <canvas class="hero__gl" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero__hud" aria-hidden="true">
+    <span class="hud hud--tl"></span><span class="hud hud--tr"></span><span class="hud hud--bl"></span><span class="hud hud--br"></span>
+    <span class="hero__sys hero__sys--l">SYS.ONLINE <i></i> NEURAL.CORE v26</span>
+    <span class="hero__sys hero__sys--r">LLM · VOICE · AUTOMATION</span>
+  </div>
+
+  <div class="hero__inner wrap">
+    <p class="hero__badge" data-hero>
+      <span class="hero__pulse"></span>
+      AI · Full-Stack · Polyglot — available {new Date().getFullYear()}
+    </p>
+
+    <h1 class="hero__title" id="hero-title">
+      <span class="sr">Vishal Rana — AI &amp; Full-Stack Engineer. Engineering intelligent software, in any language.</span>
+      <span class="hero__line" aria-hidden="true"><span>Engineering</span></span>
+      <span class="hero__line" aria-hidden="true"><span><em class="gold">intelligent</em> software,</span></span>
+      <span class="hero__line" aria-hidden="true"><span>in <span class="hero__rotor" data-rotor="any language.|Python.|Java.|Kotlin.|TypeScript.|any language.">any language.</span></span></span>
+    </h1>
+
+    <p class="hero__sub" data-hero>
+      I'm <strong>Vishal Rana</strong> — an AI &amp; full-stack engineer building LLM agents, voice AI and automations with
+      OpenAI, Claude and ElevenLabs, shipped in Python, Java, Kotlin, TypeScript — whatever the problem demands.
+    </p>
+
+    <div class="hero__ctas" data-hero>
+      <a href="#ai" class="btn btn--gold" data-magnetic>
+        <span>Enter the AI Lab</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10m0 0 4-4m-4 4-4-4" /></svg>
+      </a>
+      <a href="#contact" class="btn btn--ghost" data-magnetic><span>Start a conversation</span></a>
+    </div>
+  </div>
+
+  <div class="hero__foot wrap" data-hero>
+    <div class="hero__meta">
+      <span>Based in</span><b>{site.location}</b>
+    </div>
+    <div class="hero__meta hide-sm">
+      <span>Currently</span><b>Software Engineer · PKWARE</b>
+    </div>
+    <div class="hero__meta hide-sm">
+      <span>Local time</span><b data-clock>—</b>
+    </div>
+    <div class="hero__meta hide-md">
+      <span>Coordinates</span><b>{site.coords}</b>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+      <span>Scroll</span><i></i>
+    </a>
+  </div>
+</section>

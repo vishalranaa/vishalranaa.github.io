@@ -1,0 +1,65 @@
+---
+import Split from "./Split.astro";
+import { aiCaps, aiProviders, agentRun } from "../data/profile";
+
+const icons: Record<string, string> = {
+  agent: `<path d="M24 6v6M14 12h20a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6Z"/><circle cx="18" cy="24" r="2.5"/><circle cx="30" cy="24" r="2.5"/><path d="M19 31h10M4 22v6M44 22v6"/>`,
+  voice: `<path d="M6 24h3M12 18v12M18 12v24M24 16v16M30 8v32M36 14v20M42 24h-3"/>`,
+  flow: `<rect x="5" y="8" width="12" height="10" rx="2"/><rect x="31" y="8" width="12" height="10" rx="2"/><rect x="18" y="30" width="12" height="10" rx="2"/><path d="M17 13h14M11 18v6h13v6M37 18v6H24"/>`,
+  code: `<path d="m16 15-9 9 9 9M32 15l9 9-9 9M27 10l-6 28"/>`,
+  data: `<path d="M8 40V22M18 40V12M28 40V26M38 40V8"/><path d="m6 18 10-8 10 12 14-14"/>`,
+  api: `<circle cx="24" cy="24" r="6"/><path d="M24 6v8M24 34v8M6 24h8M34 24h8M11 11l6 6M31 31l6 6M37 11l-6 6M17 31l-6 6"/>`,
+};
+---
+<section class="ailab section" id="ai" aria-labelledby="ai-h">
+  <div class="ailab__grid-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="ailab__top">
+      <div class="ailab__intro">
+        <div class="label" data-reveal><span>02</span><b data-scramble>AI Lab</b></div>
+        <Split tag="h2" id="ai-h" class="h2" text="Intelligence, *automated.*" />
+        <p class="head__lead" data-reveal>
+          I design and build AI tools and automations on top of OpenAI, Claude and ElevenLabs — agents that plan, call APIs,
+          write, speak and finish real work, end to end.
+        </p>
+        <ul class="providers" data-reveal aria-label="AI platforms I build with">
+          {aiProviders.map((p) => <li><span class="providers__dot"></span>{p}</li>)}
+        </ul>
+      </div>
+
+      <figure class="console" data-reveal data-console aria-label="Illustrative agent automation run">
+        <div class="console__bar">
+          <span class="console__dots"><i></i><i></i><i></i></span>
+          <span class="console__title">agent.run — automation</span>
+          <span class="console__live"><i></i>Live</span>
+        </div>
+        <div class="console__body">
+          {agentRun.map((l, i) => (
+            <div class:list={["cl", `cl--${l.k}`]} data-line={i}>
+              {l.k === "cmd" && <><span class="cl__prompt">❯</span><span class="cl__type" data-text={l.t}>{l.t}</span><span class="caret"></span></>}
+              {l.k === "step" && <><span class="cl__spin" aria-hidden="true"></span><span class="cl__t">{l.t}</span><span class="cl__tool">{l.tool}</span><span class="cl__r">{l.r}</span></>}
+              {l.k === "done" && <><span class="cl__star">✦</span><span>{l.t}</span></>}
+            </div>
+          ))}
+        </div>
+        <figcaption class="console__cap">Illustrative automation flow · OpenAI · Claude · ElevenLabs · REST</figcaption>
+        <span class="hud hud--tl" aria-hidden="true"></span><span class="hud hud--tr" aria-hidden="true"></span>
+        <span class="hud hud--bl" aria-hidden="true"></span><span class="hud hud--br" aria-hidden="true"></span>
+      </figure>
+    </div>
+
+    <ul class="caps">
+      {aiCaps.map((c, i) => (
+        <li class="cap" data-reveal data-spot>
+          <div class="cap__head">
+            <svg class="cap__icon" viewBox="0 0 48 48" aria-hidden="true" set:html={icons[c.icon]} />
+            <span class="cap__no">{String(i + 1).padStart(2, "0")}</span>
+          </div>
+          <h3>{c.title}</h3>
+          <p>{c.body}</p>
+          <div class="cap__tags">{c.tags.map((t) => <span>{t}</span>)}</div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

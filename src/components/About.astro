@@ -1,0 +1,73 @@
+---
+import { site, values, projects } from "../data/profile";
+const years = new Date().getFullYear() - site.careerStart;
+const statement =
+  "I build intelligent software the way fine things are made — with *patience,* precision and an obsessive eye for *detail.* AI agents that actually ship. Back ends that stay quiet under load. Code in *any* language the problem demands.";
+const words = statement.split(" ").map((w) => ({ em: w.startsWith("*"), t: w.replace(/\*/g, "") }));
+---
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    {[0, 1].map(() => (
+      <div class="ticker__group">
+        {values.map((v) => <><span class="ticker__word">{v}</span><span class="ticker__star">✦</span></>)}
+      </div>
+    ))}
+  </div>
+</div>
+
+<section class="about section" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="label" data-reveal><span>01</span><b data-scramble>About</b></div>
+    <h2 class="sr" id="about-h">About Vishal Rana</h2>
+    <p class="about__statement" data-lit>
+      {words.map((w) => (w.em ? <><em class="gold">{w.t}</em>{" "}</> : <><span>{w.t}</span>{" "}</>))}
+    </p>
+
+    <div class="bento">
+      <article class="tile tile--years" data-reveal data-spot>
+        <svg class="tile__ring" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="90" />
+          <circle cx="100" cy="100" r="90" pathLength="1" class="tile__ring-fill" />
+        </svg>
+        <span class="tile__since" aria-hidden="true"><small>Since</small>{site.careerStart}</span>
+        <div class="tile__num"><span data-counter={years}>{years}</span><sup>+</sup></div>
+        <p class="tile__cap">Years designing &amp; shipping production software</p>
+      </article>
+
+      <article class="tile tile--products" data-reveal data-spot>
+        <div class="tile__num"><span data-counter={projects.length}>{projects.length}</span></div>
+        <p class="tile__cap">Flagship platforms live in production</p>
+        <div class="tile__bars" aria-hidden="true">{projects.map((_, i) => <i style={`--i:${i}`}></i>)}</div>
+      </article>
+
+      <article class="tile tile--ai" data-reveal data-spot>
+        <p class="tile__kicker">AI stack</p>
+        <p class="tile__big">Agents, voice &amp; automation</p>
+        <ul class="tile__chips">
+          <li>OpenAI</li><li>Claude</li><li>ElevenLabs</li><li>ChatGPT</li><li>Codex</li><li>Claude Code</li>
+        </ul>
+        <div class="tile__wave" aria-hidden="true">{Array.from({ length: 28 }, (_, i) => <i style={`--i:${i}`}></i>)}</div>
+      </article>
+
+      <article class="tile tile--place" data-reveal data-spot>
+        <div class="globe" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="80" />
+            <ellipse cx="100" cy="100" rx="80" ry="28" />
+            <ellipse cx="100" cy="100" rx="80" ry="58" />
+            <g class="globe__spin">
+              <ellipse cx="100" cy="100" rx="28" ry="80" />
+              <ellipse cx="100" cy="100" rx="58" ry="80" />
+            </g>
+            <circle class="globe__pin" cx="128" cy="78" r="4" />
+          </svg>
+        </div>
+        <div>
+          <p class="tile__kicker">Based in</p>
+          <p class="tile__big">Chandigarh, India</p>
+          <p class="tile__cap">Working worldwide · <span data-clock>IST</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

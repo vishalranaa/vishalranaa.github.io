@@ -1,0 +1,46 @@
+---
+import Split from "./Split.astro";
+import { languages, moreLanguages, frameworks } from "../data/profile";
+import { highlight } from "../data/highlight";
+---
+<section class="poly section" id="polyglot" aria-labelledby="poly-h">
+  <div class="wrap poly__grid">
+    <div class="poly__text">
+      <div class="label" data-reveal><span>03</span><b data-scramble>Polyglot</b></div>
+      <Split tag="h2" id="poly-h" class="h2" text="No language *barriers.*" />
+      <p class="head__lead" data-reveal>
+        With AI as a co-pilot, the language is a detail — the engineering isn't. Same idea, any stack:
+        Python, Java and Kotlin on Spring Boot &amp; Hibernate, TypeScript and JavaScript on Node.
+      </p>
+
+      <div class="poly__tabs" role="tablist" aria-label="Choose a language" data-reveal>
+        {languages.map((l, i) => (
+          <button type="button" role="tab" class="poly__tab" id={`tab-${i}`} aria-controls={`panel-${i}`} aria-selected={i === 0 ? "true" : "false"} tabindex={i === 0 ? 0 : -1} data-tab={i}>
+            <span class="poly__tab-name">{l.name}</span>
+            <span class="poly__tab-stack">{l.stack}</span>
+            <span class="poly__tab-bar" aria-hidden="true"><i></i></span>
+          </button>
+        ))}
+      </div>
+      <p class="poly__more" data-reveal><span>Also fluent in</span> {moreLanguages.join(" · ")}</p>
+      <p class="poly__more" data-reveal><span>Frameworks &amp; cloud</span> {frameworks.join(" · ")}</p>
+    </div>
+
+    <div class="editor" data-reveal>
+      <div class="editor__bar">
+        <span class="console__dots"><i></i><i></i><i></i></span>
+        <span class="editor__file" data-file>{languages[0].file}</span>
+        <span class="editor__lang" data-lang>{languages[0].name}</span>
+      </div>
+      <div class="editor__body">
+        {languages.map((l, i) => (
+          <pre class:list={["editor__panel", { "is-active": i === 0 }]} id={`panel-${i}`} role="tabpanel" aria-labelledby={`tab-${i}`} hidden={i !== 0} data-panel={i} data-file={l.file} data-name={l.name}><code set:html={highlight(l.code, l.name)} /></pre>
+        ))}
+      </div>
+      <div class="editor__status" aria-hidden="true">
+        <span><i class="ok"></i>compiled</span><span>UTF-8</span><span>AI-assisted · human-reviewed</span>
+      </div>
+      <span class="hud hud--tl" aria-hidden="true"></span><span class="hud hud--br" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>

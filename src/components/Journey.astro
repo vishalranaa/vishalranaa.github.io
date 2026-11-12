@@ -1,0 +1,47 @@
+---
+import Split from "./Split.astro";
+import { journey, education } from "../data/profile";
+---
+<section class="journey section" id="journey" aria-labelledby="journey-h">
+  <div class="wrap journey__grid">
+    <header class="journey__head">
+      <div class="label" data-reveal><span>05</span><b data-scramble>Journey</b></div>
+      <Split tag="h2" id="journey-h" class="h2" text="A decade of *quiet* craft." />
+      <p class="head__lead" data-reveal>From a curious intern writing Java to engineering data-protection software for a global security leader.</p>
+
+      <div class="edu" data-reveal data-spot>
+        <svg class="edu__seal" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="sealpath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+          <text><textPath href="#sealpath" textLength="286" lengthAdjust="spacing">Foundation · Information Technology · Honours ·</textPath></text>
+          <circle cx="60" cy="60" r="30" />
+          <path d="M44 66 60 52l16 14M48 64v10h24V64" />
+        </svg>
+        <div>
+          <p class="edu__kicker">Education</p>
+          <h3 class="edu__degree">{education.degree}</h3>
+          <a href={education.url} class="u edu__school" target="_blank" rel="noopener">{education.school}</a>
+          <ul>{education.notes.map((n) => <li>{n}</li>)}</ul>
+        </div>
+      </div>
+    </header>
+
+    <ol class="tl">
+      <span class="tl__rail" aria-hidden="true"><i class="tl__fill"></i></span>
+      {journey.map((j, i) => (
+        <li class="tl__item" data-tl>
+          <span class="tl__node" aria-hidden="true"></span>
+          <div class="tl__card" data-spot>
+            <div class="tl__meta">
+              <span class="tl__period">{j.period}</span>
+              <span>{j.location}</span>
+            </div>
+            <h3 class="tl__role">{j.role}</h3>
+            <a class="tl__company u" href={j.url} target="_blank" rel="noopener">{j.company}</a>
+            <p class="tl__body">{j.body}</p>
+            {i === 0 && <span class="tl__now">Present</span>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

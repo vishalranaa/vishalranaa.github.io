@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import Chrome from "../components/Chrome.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import AILab from "../components/AILab.astro";
+import Polyglot from "../components/Polyglot.astro";
+import Work from "../components/Work.astro";
+import Journey from "../components/Journey.astro";
+import Contact from "../components/Contact.astro";
+---
+<Base>
+  <Chrome />
+  <main id="main">
+    <Hero />
+    <About />
+    <AILab />
+    <Polyglot />
+    <Work />
+    <Journey />
+    <Contact />
+  </main>
+  <script>
+    import "../scripts/main";
+  </script>
+</Base>

@@ -1,0 +1,74 @@
+---
+import { site, socials } from "../data/profile";
+const year = new Date().getFullYear();
+---
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="contact__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="label" data-reveal><span>06</span><b data-scramble>Contact</b></div>
+    <h2 class="contact__title" id="contact-h">
+      <span class="contact__line"><span>Let's create</span></span>
+      <span class="contact__line"><span>something <em class="gold">timeless.</em></span></span>
+    </h2>
+
+    <div class="contact__row">
+      <a class="orb" href={`mailto:${site.email}`} data-magnetic data-cursor="Write">
+        <svg class="orb__text" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="orbpath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+          <text><textPath href="#orbpath" textLength="488" lengthAdjust="spacing">Start a project · Start a project · Start a project ·</textPath></text>
+        </svg>
+        <svg class="orb__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+        <span class="sr">Email Vishal to start a project</span>
+      </a>
+
+      <div class="contact__mailbox">
+        <p class="contact__kicker">Write to me directly</p>
+        <a class="contact__mail" href={`mailto:${site.email}`} data-cursor="Write">
+          <span class="u">Send me an email</span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+        </a>
+        <div class="contact__btns">
+          <a class="btn btn--ghost" href={`tel:${site.phone.replace(/\s/g, "")}`} data-magnetic><span>{site.phone}</span></a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="socials">
+      {socials.map((s) => (
+        <li data-reveal>
+          <a href={s.href} target="_blank" rel="noopener me" data-spot>
+            <span class="socials__name">{s.name}</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__cols">
+        <div>
+          <p class="footer__kicker">Studio</p>
+          <p>{site.location}<br /><span data-clock>IST</span></p>
+        </div>
+        <div>
+          <p class="footer__kicker">Status</p>
+          <p class="footer__status">Accepting select projects</p>
+        </div>
+        <div class="footer__top">
+          <button type="button" class="totop" data-top aria-label="Back to top">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3m0 0L4 7m4-4 4 4" /></svg>
+          </button>
+        </div>
+      </div>
+      <p class="footer__word" aria-hidden="true">
+        {[..."Vishal Rana"].map((c) => <span>{c === " " ? " " : c}</span>)}
+      </p>
+      <div class="footer__bar">
+        <span>© {year} Vishal Rana. All rights reserved.</span>
+        <span>Designed &amp; engineered with care in Chandigarh.</span>
+      </div>
+    </div>
+  </footer>
+</section>

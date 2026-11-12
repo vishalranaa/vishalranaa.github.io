@@ -1,0 +1,48 @@
+---
+import Split from "./Split.astro";
+import { projects } from "../data/profile";
+const pad = (n: number) => String(n).padStart(2, "0");
+---
+<section class="work section" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <header class="head">
+      <div class="label" data-reveal><span>04</span><b data-scramble>Selected work</b></div>
+      <Split tag="h2" id="work-h" class="h2" text="Platforms I've *engineered.*" />
+      <p class="head__lead" data-reveal>Live products across luxury commerce, healthcare and Swiss fintech. Hover to preview, click to visit.</p>
+    </header>
+
+    <ol class="plist">
+      {projects.map((p, i) => (
+        <li class="prow" data-reveal>
+          <a href={p.url} target="_blank" rel="noopener" class="prow__link" data-cursor="Visit" data-preview={i}>
+            <span class="prow__no">{pad(i + 1)}</span>
+            <span class="prow__name">
+              <span class="prow__roll"><span>{p.name}</span><span class="gold" aria-hidden="true">{p.name}</span></span>
+            </span>
+            <span class="prow__kind">{p.kind}</span>
+            <span class="prow__tech">{p.tech.join(" · ")}</span>
+            <span class="prow__arrow" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg></span>
+          </a>
+          <div class="prow__mobile" aria-hidden="true">
+            <div class="cover" style={`--c1:${p.hue[0]};--c2:${p.hue[1]}`}><span class="cover__mono">{p.name[0]}</span><span class="cover__name">{p.name}</span></div>
+          </div>
+          <p class="prow__body">{p.body}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+
+  <!-- Floating preview that follows the cursor (desktop) -->
+  <div class="preview" aria-hidden="true">
+    <div class="preview__reel">
+      {projects.map((p) => (
+        <div class="cover" style={`--c1:${p.hue[0]};--c2:${p.hue[1]}`}>
+          <span class="cover__mono">{p.name[0]}</span>
+          <span class="cover__kind">{p.kind}</span>
+          <span class="cover__name">{p.name}</span>
+          <span class="cover__desc">{p.body}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
